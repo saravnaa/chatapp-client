@@ -1,8 +1,8 @@
-import React,{useEffect, useState} from 'react'
+import React,{ useState} from 'react'
 import './AllUsersModal.css'
 
 function AllUsersModal(props) {
-    const [users, setUsers] = useState([])
+    // const [users, setUsers] = useState([])
 
     // useEffect(() => {
     //     console.log(props.user)
@@ -37,7 +37,7 @@ function AllUsersModal(props) {
                     X
                 </button>
                 <div style={{color:"white",marginTop:"20px"}}>
-                    {props.users.map(user => <div onClick={()=> handleAddChat(user)}style={{margin:"5px",backgroundColor:"black",color:"white", padding:"8px"}}>
+                    {props.users.map((user,i) => <div key={i} onClick={()=> handleAddChat(user)}style={{margin:"5px",backgroundColor:"black",color:"white", padding:"8px"}}>
                         {user}
                     </div>)}
                 </div>
