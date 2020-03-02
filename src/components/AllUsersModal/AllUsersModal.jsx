@@ -1,14 +1,8 @@
-import React,{ useState} from 'react'
+import React from 'react'
 import './AllUsersModal.css'
 
 function AllUsersModal(props) {
-    // const [users, setUsers] = useState([])
-
-    // useEffect(() => {
-    //     console.log(props.user)
-        
-    // },[])
-
+    
     console.log("props.users",props.users)
 
     const handleAddChat = (reciever) => {
