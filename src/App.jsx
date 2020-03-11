@@ -25,6 +25,7 @@ function App() {
       }
       
     }
+    // eslint-disable-next-line
   }, [user])
 
   useEffect(()=> {
